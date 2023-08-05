@@ -1,0 +1,21 @@
+import 'package:flutter/material.dart';
+import 'package:gitmaster/screen/home_screen.dart';
+import 'package:gitmaster/screen/spash_screen.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        title: 'Git Master',
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData.dark(),
+        home: SplashPage(),
+    );
+  }
+}
